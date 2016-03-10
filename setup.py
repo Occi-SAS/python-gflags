@@ -29,7 +29,8 @@
 
 """Setup module for python-gflags."""
 
-from setuptools import setup
+from setuptools import setup, find_packages
+
 
 setup(name='python-gflags',
       version='3.0.2',
@@ -41,4 +42,5 @@ setup(name='python-gflags',
       py_modules=['gflags'],
       data_files=[('bin', ['gflags2man.py'])],
       include_package_data=True,
-     )
+      packages=find_packages()
+)
